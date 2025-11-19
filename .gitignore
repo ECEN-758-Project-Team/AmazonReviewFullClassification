@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# macOS
+.DS_Store
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and databases
+*.log
+.log/
+*.sqlite3
+*.db
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch / TensorFlow model files
+*.pt
+*.pth
+pytorch_model.bin
+tf_model.h5
+*.ckpt
+*.safetensors
+
+# Hugging Face / transformers cache and checkpoints (local)
+# note: keep configs/tokenizer JSON tracked but ignore large weight files
+cache/
+.cache/
+transformers_cache/
+hf_home/
+
+# Checkpoints, runs, outputs
+checkpoints/
+runs/
+logs/
+outputs/
+saved_models/
+wandb/
+.mlruns/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+
+# Local model epoch directories: ignore large binaries but allow configs/tokenizers
+epoch*/pytorch_model.bin
+epoch*/pytorch_model.bin.index
+epoch*/*.bin
+epoch*/*.safetensors
+
+# OS generated files
+ehthumbs.db
+Icon?
+Thumbs.db
