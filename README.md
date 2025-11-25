@@ -1,4 +1,4 @@
-# amazonecen
+# Amazon Reviews Classification
 
 A machine‐learning / data‐analysis project exploring ecommerce event classification and confidence evaluation using the Amazon e­Commerce dataset.
 
@@ -11,24 +11,20 @@ This repository contains code, experiments, and evaluation assets for the “Ama
 - Sample data input (`test.csv`) and output logs (`evaluation_results.txt`).
 
 ## 📂 Repository Structure  
-/
-├── Experiment (1).ipynb
-├── test.py
-├── requirements.txt
-├── test.csv
-├── evaluation_results.txt
-├── confusion_matrix.png
-├── f1_scores.png
-├── metrics_comparison.png
-├── confidence_distribution.png
-├── correct_incorrect_by_confidence.png
-├── .gitattributes
-├── .DS_Store
-├── <other files>
-└── …
-
-markdown
-Copy code
+| File Structure |
+| :--- |
+| `Experiment (1).ipynb` |
+| `test.py` |
+| `requirements.txt` |
+| `test.csv` |
+| `evaluation_results.txt` |
+| `confusion_matrix.png` |
+| `f1_scores.png` |
+| `metrics_comparison.png` |
+| `confidence_distribution.png` |
+| `correct_incorrect_by_confidence.png`|
+| `.gitattributes` |
+| `.DS_Store` |
 
 ## 🧠 Key Features  
 - **End‐to‐end ML workflow**: from dataset ingestion → preprocessing → training → evaluation.  
@@ -43,46 +39,56 @@ Copy code
 - Virtual environment recommended (e.g., `venv`, `conda`)  
 - Install dependencies:  
   ```bash
-  pip install -r requirements.txt
-Running the notebook
-Launch Jupyter or open Experiment (1).ipynb in your IDE.
+    pip install -r requirements.txt
+  ```
+-  Clone the repository with Git LFS 
+  - Install Git LFS if not already installed
+  ```bash                                                                                                                                                                                                                                                                      
+    git lfs install
+  ```
+  - Clone the repository (this will download LFS files automatically)                                                                                                                                                                                                                                             
+  ```bash
+    git clone <repository-url>
+  ```
+### Running the notebook
+- Launch Jupyter or open Experiment (1).ipynb in your IDE.
 
-Run the cells sequentially: dataset loading → preprocessing → training → evaluation → analysis.
+- Run the cells sequentially: dataset loading → preprocessing → training → evaluation → analysis.
 
-Inspect the visual outputs: confidence distribution, confusion matrix, F1-scores.
+- Inspect the visual outputs: confidence distribution, confusion matrix, F1-scores.
 
-Running tests
-bash
-Copy code
-python test.py
+- Running tests
+  ```bash
+    python test.py
+  ```
 This executes core functional tests to ensure pipeline integrity (data loading, preprocessing, prediction outputs, etc).
 
-📊 Results
-Confidence distribution: confidence_distribution.png illustrates how prediction confidence correlates with correct vs incorrect outputs.
+## 📊 Results
+- Confidence distribution: confidence_distribution.png illustrates how prediction confidence correlates with correct vs incorrect outputs.
 
-Confusion matrix: confusion_matrix.png shows classification performance per class.
+- Confusion matrix: confusion_matrix.png shows classification performance per class.
 
-F1-scores and comparison: f1_scores.png and metrics_comparison.png allow side‐by‐side comparison of model variants and class‐level performance.
+- F1-scores and comparison: f1_scores.png and metrics_comparison.png allow side‐by‐side comparison of model variants and class‐level performance.
 
-Correct vs incorrect by confidence: correct_incorrect_by_confidence.png helps identify high-confidence misclassifications for deeper error‐analysis.
+- Correct vs incorrect by confidence: correct_incorrect_by_confidence.png helps identify high-confidence misclassifications for deeper error‐analysis.
 
-💡 Use Cases
-Use this project as a reference workflow for event classification or confidence‐based analysis in classification models.
+## 💡 Use Cases
+- Use this project as a reference workflow for event classification or confidence‐based analysis in classification models.
 
-Extend and adapt the notebook to new datasets (e.g., other ecommerce logs, user interaction data).
+- Extend and adapt the notebook to new datasets (e.g., other ecommerce logs, user interaction data).
 
-Plug in your own model architectures, thresholds, or error-analysis strategies based on the existing evaluation framework.
+- Plug in your own model architectures, thresholds, or error-analysis strategies based on the existing evaluation framework.
 
-🗂️ Future Work
-Expand dataset size and diversity (e.g., full Amazon e-commerce logs, additional features).
+## 🗂️ Future Work
+- Expand dataset size and diversity (e.g., full Amazon e-commerce logs, additional features).
 
-Experiment with advanced architectures (transformers, sequence models) for event classification.
+- Experiment with advanced architectures (transformers, sequence models) for event classification.
 
-Implement automatic threshold tuning for confidence‐based decision‐making.
+- Implement automatic threshold tuning for confidence‐based decision‐making.
 
-Add model serialization, deployment scripts and live inference demo.
+- Add model serialization, deployment scripts and live inference demo.
 
-Integrate dataset versioning and pipeline automation (CI/CD, scheduled runs, etc).
+- Integrate dataset versioning and pipeline automation (CI/CD, scheduled runs, etc).
 
-📄 License
-This repository is provided under the MIT License – see the LICENSE file for details.
+## 📄 License
+- This repository is provided under the MIT License – see the LICENSE file for details.
