@@ -13,25 +13,36 @@ This repository contains code, experiments, and evaluation assets for the “Ama
 ## 📂 Repository Structure  
 | File Structure |
 | :--- |
-| `Experiment (1).ipynb` |
-| `test.py` |
+| `best_lstm_model.pt` |
+| `best_rnn_model.pt` |
+| `data_preprocessing_and_eda.py` |
+| `deberta_training.py` |
+| `evaluation_results.txt` |
+| `README.md` |
 | `requirements.txt` |
+| `rnn_lstm_training.py` |
 | `test.csv` |
+| `test.py` |
+| `train.csv` |
 | `evaluation_results.txt` |
 | `confusion_matrix.png` |
 | `f1_scores.png` |
 | `metrics_comparison.png` |
 | `confidence_distribution.png` |
 | `correct_incorrect_by_confidence.png`|
+| `epoch2` |
+| `comparison_all_models.png` |
 | `.gitattributes` |
 | `.DS_Store` |
 
 ## 🧠 Key Features  
+- **Data Preprocessing and EDA**: pre-process and analyze required amount of data by running `data_preprocessing_and_eda.py`
 - **End‐to‐end ML workflow**: from dataset ingestion → preprocessing → training → evaluation.  
 - **Confidence‐based error analysis**: plot distributions of prediction confidence and investigate misclassifications vs confidence thresholds (`confidence_distribution.png`, `correct_incorrect_by_confidence.png`).  
 - **Comprehensive evaluation**: visualize confusion matrices, F1 scores over classes, and compare metrics across model variants (`metrics_comparison.png`).  
 - **Reproducible setup**: easily install dependencies via `requirements.txt` and run `test.py` to verify core functionality.  
 - **Experiment notebook**: the Jupyter notebook contains documented steps, code explanations, visualizations, and analysis commentary.
+- **Comparison of all Experimented Models**: view the metric comparison graph for all experimented models in `comparison_all_models.png`
 
 ## 🛠️ Getting Started  
 ### Prerequisites  
@@ -51,7 +62,7 @@ This repository contains code, experiments, and evaluation assets for the “Ama
     git clone <repository-url>
   ```
 ### Running the notebook
-- Launch Jupyter or open Experiment (1).ipynb in your IDE.
+- Launch Jupyter or open deberta_training.ipynb in your IDE.
 
 - Run the cells sequentially: dataset loading → preprocessing → training → evaluation → analysis.
 
