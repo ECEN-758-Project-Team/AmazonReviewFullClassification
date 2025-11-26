@@ -427,7 +427,7 @@ results_summary += "✓ confidence_distribution.png\n"
 results_summary += "✓ correct_incorrect_by_confidence.png\n"
 results_summary += "✓ metrics_comparison.png\n"
 
-with open('evaluation_results.txt', 'w') as f:
+with open('evaluation_results.txt', 'w', encoding='utf-8') as f:
     f.write(results_summary)
 
 print("✓ Saved evaluation_results.txt")
