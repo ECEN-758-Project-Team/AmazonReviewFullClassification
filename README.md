@@ -83,6 +83,8 @@ This executes core functional tests to ensure pipeline integrity (data loading, 
 
 - Correct vs incorrect by confidence: correct_incorrect_by_confidence.png helps identify high-confidence misclassifications for deeper error‐analysis.
 
+- Comparison of all models: Comparison of test metrics for all models in comparison_all_models.png
+
 ## 💡 Use Cases
 - Use this project as a reference workflow for event classification or confidence‐based analysis in classification models.
 
