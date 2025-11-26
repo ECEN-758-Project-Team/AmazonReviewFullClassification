@@ -4,7 +4,7 @@ A machine‐learning / data‐analysis project exploring ecommerce event classif
 
 ## 🚀 Project Overview  
 This repository contains code, experiments, and evaluation assets for the “Amazon ECEN” project:  
-- A Jupyter notebook (`Experiment (1).ipynb`) that steps through data loading, preprocessing, model training, confidence distribution analysis, and error‐investigation.
+- A Jupyter notebook (`deberta_training.ipynb`) that steps through data loading, preprocessing, model training, confidence distribution analysis, and error‐investigation.
 - Unit / functional test code (`test.py`) to validate key pipeline components.
 - A full evaluation results breakdown including confusion matrices, F1‐score plots, and metrics comparisons (`confusion_matrix.png`, `f1_scores.png`, `metrics_comparison.png`, etc).
 - A requirements file (`requirements.txt`) listing Python dependencies for reproducibility.
